@@ -1,0 +1,127 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "toastify-js/src/toastify.css";
+
+.toastify.error {
+    box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(175, 77, 232, 0.3);
+    background: -webkit-linear-gradient(315deg, #ff7373, #f55454);
+    background: linear-gradient(135deg, #ff7373, #f55454);
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+body {
+    @apply bg-indigo-50;
+
+    a {
+        @apply text-indigo-700;
+    }
+}
+
+
+label.form-label {
+    @apply block w-full mb-1;
+}
+
+.form-control {
+    @apply p-3 border-2 rounded-sm border-indigo-400 max-w-full;
+}
+
+.invalid-feedback {
+    @apply text-red-500;
+}
+
+.app-page {
+    @apply container mx-auto;
+
+    .page-inner-area {
+        @apply bg-indigo-100 p-5 rounded-sm shadow-sm;
+    }
+}
+
+.page-toolbar {
+    @apply flex justify-between mb-5;
+
+    .toolbar-heading {
+        @apply text-3xl font-bold;
+    }
+}
+
+.lists {
+    @apply grid grid-cols-3 gap-3;
+}
+
+.list-entry {
+    @apply bg-indigo-50 shadow-sm rounded-md p-3;
+
+    &:hover {
+        @apply bg-opacity-60;
+    }
+}
+
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto #ffffff79;
+}
+
+.btn {
+    @apply px-3 py-2;
+    transition: background-color 300ms;
+    @apply rounded-sm font-medium;
+
+    &:focus {
+        @apply outline-none;
+    }
+
+    &:disabled {
+        @apply cursor-default;
+    }
+}
+
+.btn-primary {
+    @apply bg-indigo-700 text-white;
+
+    &:hover {
+        @apply bg-indigo-600;
+    }
+
+    &:active {
+        @apply bg-indigo-900;
+    }
+
+    &:disabled {
+        @apply text-gray-300 bg-indigo-500;
+    }
+}
+
+.btn-secondary {
+    @apply bg-white text-gray-700;
+
+    &:hover {
+        @apply bg-gray-50;
+    }
+
+    &:active {
+        @apply bg-gray-300;
+    }
+
+    &.confirm {
+        @apply bg-red-700 text-white;
+
+        &:hover {
+            @apply bg-red-600;
+        }
+
+        &:active {
+            @apply bg-red-900;
+        }
+    }
+
+    &:disabled {
+        @apply bg-gray-100 text-gray-400;
+    }
+}
