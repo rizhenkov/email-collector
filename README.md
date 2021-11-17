@@ -2,6 +2,8 @@
 
 This app was created as test task.
 
+Develop a microservice application that discovers email addresses of websites with the help of email discovery API. You will prompt a user for a list of URLs/domains and discover email addresses associated with those domains.
+
 ## Install
 
 `composer i`
