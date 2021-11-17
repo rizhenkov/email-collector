@@ -126,43 +126,7 @@ Alpine.data('emailCollectorApp', function () {
                 name: 'List 1',
             }, */
         ],
-        currentList: {
-            id: 1,
-            name: 'My',
-            domains: [
-                {
-                    domain_name: 'abc.com',
-                    contacts: [
-                        {
-                            id: 1,
-                            first_name: 'John',
-                            last_name: 'Doe',
-                            email: 'johndoe@mail.tld',
-                            confidence: 67,
-                        }
-                    ]
-                },
-                {
-                    domain_name: 'another.com',
-                    contacts: [
-                        {
-                            id: 1,
-                            first_name: 'John',
-                            last_name: 'Doe',
-                            email: 'johndoe@mail.tld',
-                            confidence: 67,
-                        },
-                        {
-                            id: 1,
-                            first_name: 'John 2',
-                            last_name: 'Doe 2',
-                            email: 'johndoe@mail.tld',
-                            confidence: 67,
-                        }
-                    ]
-                }
-            ]
-        },
+        currentList: {},
         
     }
 })
