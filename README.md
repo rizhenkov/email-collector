@@ -6,9 +6,15 @@ Develop a microservice application that discovers email addresses of websites wi
 
 ## Install
 
+`git clone https://github.com/rizhenkov/email-collector && cd email-collector`
+
 `composer i`
 
 `cp .env.example .env`
+
+`php artisan key:generate`
+
+`php artisan migrate`
 
 (optionally) `npm i`
 
