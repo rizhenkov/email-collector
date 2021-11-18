@@ -51,7 +51,7 @@ label.form-label {
 }
 
 .lists {
-    @apply grid grid-cols-3 gap-3;
+    @apply grid grid-cols-1 md:grid-cols-3 gap-3;
 }
 
 .list-entry {
